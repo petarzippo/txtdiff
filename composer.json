@@ -1,0 +1,22 @@
+{
+    "name": "petar/txtdiff",
+    "description": "This is Laravel compose package for finding text difference.\u001b[A\u001b[C",
+    "license": "Quantox",
+    "keywords": ["laravel"],
+    "authors":
+    [
+        {
+            "name": "Petar Milivojevic",
+            "email": "petar.milivojevic@quantox.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload":
+    {
+        "psr-4":
+        {
+            "Petar\\txtdiff\\": "src/"
+        }
+    }
+}
