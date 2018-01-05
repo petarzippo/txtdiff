@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a6cd68a-313d-40a7-ac8a-44b87a0da4ee" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TextDiff.php" afterPath="$PROJECT_DIR$/src/TextDiff.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TxtdiffController.php" afterPath="$PROJECT_DIR$/src/TxtdiffController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wp/Text/Diff/Renderer/inline.php" afterPath="$PROJECT_DIR$/src/wp/Text/Diff/Renderer/inline.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wp/wp-diff.php" afterPath="$PROJECT_DIR$/src/wp/wp-diff.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,6 +44,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7.1" />
   <component name="ProjectFrameBounds" extendedState="6">
@@ -86,6 +93,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../txtdiff" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -102,6 +110,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="0a6cd68a-313d-40a7-ac8a-44b87a0da4ee" name="Default" comment="" />
@@ -109,15 +120,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515141851629</updated>
-      <workItem from="1515141852942" duration="53000" />
+      <workItem from="1515141852942" duration="1315000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53000" />
+    <option name="totallyTimeSpent" value="1315000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-11" width="1922" height="1092" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2497332" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />

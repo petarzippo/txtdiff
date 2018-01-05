@@ -28,7 +28,7 @@ class TextDiff
 		if (! $diff)
 			return '';
 
-		$r  = "<table class='diff'>\n";
+		$r  = "<table class='diff' style='margin:auto; margin-top: 10%;'>\n";
 		$r .= "<tbody>\n" . $diff . "\n</tbody>\n";
 		$r .= "</table>";
 

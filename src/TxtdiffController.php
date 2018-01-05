@@ -14,6 +14,6 @@ class TxtdiffController extends Controller
         $text2 = $request->input('text2');
 
         $diff = TextDiff::render($text1, $text2);
-        echo $diff;
+        echo $diff; 
     }
 }

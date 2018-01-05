@@ -45,28 +45,28 @@ class Text_Diff_Renderer_inline extends Text_Diff_Renderer {
      *
      * @var string
      */
-    var $_ins_prefix = '<ins>';
+    var $_ins_prefix = '<span style=\'background-color: green; color:white\'>';
 
     /**
      * Suffix for inserted text.
      *
      * @var string
      */
-    var $_ins_suffix = '</ins>';
+    var $_ins_suffix = '</span>';
 
     /**
      * Prefix for deleted text.
      *
      * @var string
      */
-    var $_del_prefix = '<del>';
+    var $_del_prefix = '<span style=\'background-color: red; color:white\'>';
 
     /**
      * Suffix for deleted text.
      *
      * @var string
      */
-    var $_del_suffix = '</del>';
+    var $_del_suffix = '</span>';
 
     /**
      * Header for each change block.

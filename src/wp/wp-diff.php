@@ -111,7 +111,7 @@ class WP_Text_Diff_Renderer_Table extends Text_Diff_Renderer {
 	 * @return string
 	 */
 	public function addedLine( $line ) {
-		return "<td class='diff-addedline'>{$line}</td>";
+		return "<td class='diff-addedline' style='border: 1px solid black; min-width:200px; padding:5px 10px;'>{$line}</td>";
 
 	}
 
@@ -122,7 +122,7 @@ class WP_Text_Diff_Renderer_Table extends Text_Diff_Renderer {
 	 * @return string
 	 */
 	public function deletedLine( $line ) {
-		return "<td class='diff-deletedline'>{$line}</td>";
+		return "<td class='diff-deletedline' style='border: 1px solid black; min-width:200px; padding:5px 10px;'>{$line}</td>";
 	}
 
 	/**
@@ -132,7 +132,7 @@ class WP_Text_Diff_Renderer_Table extends Text_Diff_Renderer {
 	 * @return string
 	 */
 	public function contextLine( $line ) {
-		return "<td class='diff-context'>{$line}</td>";
+		return "<td class='diff-context' style='border: 1px solid black; min-width:10%; padding:5px 10px;'>{$line}</td>";
 	}
 
 	/**
@@ -251,7 +251,7 @@ class WP_Text_Diff_Renderer_Table extends Text_Diff_Renderer {
 				$diff = $renderer->render( $text_diff );
 
 				// If they're too different, don't include any <ins> or <dels>
-				if ( preg_match_all( '!(<ins>.*?</ins>|<del>.*?</del>)!', $diff, $diff_matches ) ) {
+				if ( preg_match_all( '!(<span style=\'background-color: green; color:white\'>.*?</span>|<span style=\'background-color: red; color:white\'>.*?</span>)!', $diff, $diff_matches ) ) {
 					// length of all text between <ins> or <del>
 					$stripped_matches = strlen(strip_tags( join(' ', $diff_matches[0]) ));
 					// since we count lengith of text between <ins> or <del> (instead of picking just one),
@@ -263,8 +263,8 @@ class WP_Text_Diff_Renderer_Table extends Text_Diff_Renderer {
 				}
 
 				// Un-inline the diffs by removing del or ins
-				$orig_diffs[$o]  = preg_replace( '|<ins>.*?</ins>|', '', $diff );
-				$final_diffs[$f] = preg_replace( '|<del>.*?</del>|', '', $diff );
+				$orig_diffs[$o]  = preg_replace( '|<span style=\'background-color: green; color:white\'>.*?</span>|', '', $diff );
+				$final_diffs[$f] = preg_replace( '|<span style=\'background-color: red; color:white\'>.*?</span>|', '', $diff );
 			}
 		}
 
